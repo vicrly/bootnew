@@ -1,0 +1,113 @@
+/*
+*theme
+*/
+.twill-background{
+  background: url(../images/bg-pattern-diag.png) repeat #262f36;
+}
+.twill-section {
+  background: url(../images/bg-image-white-light.png) no-repeat center top;
+}
+.dark-section {
+  background-color: #465562;
+}
+.light-section{
+  background-color: #e1ebf3;
+}
+.other-section{
+  padding-top: 60px;
+  padding-bottom: 0px;
+  background-image: url(../images/bg-image-clouds.jpg);
+  background-position: top center;
+  background-size: 100%;
+  background-color: #D3E9F6;
+  background-repeat: no-repeat;
+  /*background-attachment: fixed;*/
+}
+.gray-section{
+  background-color: #ececec;
+  padding:60px 0 60px 0;
+}
+.footer-menu{
+  background-color: #fff;
+}
+.footer-bottom{
+  background-color: #6895b9;
+}
+
+.bottom-shade{
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 100%;
+  height: 10px;
+  background: url(../images/bottom-shade-large.png) no-repeat center;
+  z-index: 2;
+}
+
+/********************
+*default header
+*/
+#header .background-container{
+  background-image: url(../images/bg-image-clouds-guest.jpg);
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+#header .block-site-name{
+  font-size: 1.9em;
+  margin-top: 14px;
+  color: #fff;
+}
+#header .block-topsearch{  
+  margin-top: 36px;
+}
+#header .block-user-account ul{
+  color: #fff;
+  float: right;
+  list-style: none;
+}
+#header .block-user-account ul li{
+  float: left;
+}
+#header .block-user-account ul li a{
+  color: #fff;
+}
+
+/********************
+*default nav
+*/
+#nav{
+  position: relative;
+}
+#nav .block-main-menu{
+  list-style: none;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+}
+#nav .block-main-menu li{
+  display: block;
+  float: left;
+  width: 16.6666%;
+  text-align: center;
+}
+
+/*login page*/
+.login-adorn{
+  height: 450px;
+  background-image: url(../images/feather-login.jpg);
+  background-size: cover;
+}
+.login-form{
+  height: 450px;
+  background-color: #fff;
+}
+.other-login{
+  padding-top: 20px;
+}
+.reglog-weibo, .reglog-wechat{
+  background-color: aqua;
+  border-radius: 25px;
+}

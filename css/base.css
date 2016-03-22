@@ -1,0 +1,106 @@
+/**
+@base.css
+基础样式，描述的是任何场合下，页面元素的默认外观。
+它的定义不会用到 class 和 ID 。
+css reset也属于此类。
+*:
+  html:
+    body:
+      ul,ol,picture,img
+ */
+
+
+/* === Global set === */
+/*
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+*::after, *::before {
+  box-sizing: inherit;
+}
+html {
+  -webkit-text-size-adjust: none;
+  box-sizing: border-box;
+}
+body {
+  color: #000000;
+  line-height: 1.5;
+  font-size: 14px;
+  font-family: "FontAwesome", "Montserrat", "Microsoft YaHei", Arial, sans-serif;
+  word-wrap: break-word;
+  border: 0;
+}
+html, body {
+  min-width: 1100px;
+}
+header, nav, main, section, footer {
+  display: block;
+  position: relative;
+}
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+picture, img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+  width： auto9;
+   ie8 
+}
+a>img {
+  border: none;
+}
+a {
+  color: #9879A0;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+a:active, a:focus, a:hover {
+  color: #373737;
+  text-decoration: none;
+}
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0;
+}
+h1, h2, h3, h4, h5, p {
+  font-weight: normal;
+  line-height: 1.4em;
+}
+h2{
+  font-size: 1.8em;
+  font-weight: normal;;
+}
+h4{
+  font-size: 1.2em;
+}
+
+small{
+  font-size: 0.6em;
+}*/
+
+
+/*****************************
+*Font Face 
+*/
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(../fonts/Montserrat400.woff) format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'), url(../fonts/Montserrat700.woff) format('woff');
+}
