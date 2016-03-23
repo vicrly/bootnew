@@ -9,7 +9,10 @@ css reset也属于此类。
       ul,ol,picture,img
  */
 
-
+.debug-bg{
+  background-color:aqua;
+  color: aquamarine;
+}
 /* === Global set === */
 /*
 * {

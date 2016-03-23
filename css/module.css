@@ -1,0 +1,210 @@
+/* 模块样式
+它可以是一个产品列表，一个导航条。
+一般来说，Module Rules定义的元素放置于前面说的Layout Rules元素之内。
+模块是独立的，可以在各种场合重用。
+*/
+/***/
+
+/*---carouFredSel module begin---*/
+#block-home-slide {
+  width: 100%;
+  min-width: 1000px;
+  position: relative;
+}
+.view-home_slide{
+  margin: auto;
+  height: 690px;
+  overflow: hidden;  /*容器遮盖*/
+}
+.view-home_slide > div{
+  float: left;
+  width: 100%;
+}
+
+.view-home_slide > .item{
+  position: relative;
+}
+.view-home_slide > .item > a{
+  display: block;
+  float: left;
+  width: 100%;
+}
+.view-home_slide > .item .slide-txt{
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  color: #fff;
+  z-index: 4;
+  font-size: 1.4em;
+  float: none !important;
+  width: auto !important;
+	/*text-shadow:1px 1px 1px #000; /*文字阴影*/
+}
+
+#block-home-slide .pagination{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 4;
+}
+#block-home-slide .pagination .bullets{
+  margin-left: -50%;
+  float: left;
+}
+#block-home-slide .pagination a{
+  display: block;
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 100%;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
+}
+#block-home-slide .pagination a:last-child{
+  margin-right: 0;
+}
+#block-home-slide .pagination .selected{
+  background: #6f2796;
+}
+#block-home-slide .pagination span { /*bullets数字*/
+	display:none;
+	/*display:block;
+	text-align:center;
+	line-height:13px;
+	font-family:"Lucida Console", Monaco, monospace;*//*show num*/
+}
+/*窗口式文本框*/
+/*#block-home-slide .captions{
+  float: none;
+  font-size: 3em;
+  color: #fff;
+  position: absolute;
+  left: 15%;
+  top: 35%;
+}
+#block-home-slide .captions div{
+  text-shadow: 2px 2px 6px #000;
+  float: none !important;
+}
+#block-home-slide .captions small{
+  font-size: 0.5em;
+}-
+#block-home-slide .captions .round-icon{
+  width: 60px !important;
+  height: 60px;
+  font-size:0.7em;
+  line-height: 55px;
+  text-shadow:none;
+}*/
+
+/*左右箭头*/
+#block-home-slide .prev,
+#block-home-slide .next{
+  background: transparent url(../images/slideshow-nav-sprite.png) no-repeat 0 0;
+  display: block;
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  z-index:2;
+  top:50%;
+  margin-top:-33px;
+  cursor:pointer;
+}
+#block-home-slide .prev{
+  background-position: -88px 0;
+  left: 50px;
+}
+#block-home-slide .next {
+  background-position: -154px 0;
+  right: 50px;
+}
+#block-home-slide .prev:hover {
+  background-position: -88px -66px;
+}
+#block-home-slide .next:hover {
+  background-position: -154px -66px;
+}
+/*---carouFredSel module end---*/
+
+
+
+/*---section module begin---*/
+#block-slideitem .container{
+  position: relative;
+  /*overflow: hidden;*/
+}
+#block-slideitem .col1{
+  padding-top: 10px;
+}
+
+#block-slideitem .prev,
+#block-slideitem .next{
+  background: transparent url(../images/slideshow-nav-sprite.png) no-repeat 0 0;
+  display: block;
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  margin-top:-20px;
+  top: 50%;
+  z-index:3;
+  cursor:pointer;
+}
+#block-slideitem .prev{
+  background-position: -88px 0;
+  left: -28px;
+}
+#block-slideitem .next{
+  background-position: -154px 0;
+  right: -36px;
+}
+#block-slideitem .prev:hover{
+  background-position: -88px -66px;
+}
+#block-slideitem .next:hover{
+  background-position: -154px -66px;
+}
+#block-slideitem .prev.disabled,
+#block-slideitem .next.disabled{
+  display: none !important;
+}
+
+#block-slideitem .pagination {
+  float:left;
+  margin-left:50%;
+  margin-top:20px;
+}
+#block-slideitem .pagination .bullets{
+  float:left;
+  margin-left:-50%;
+}
+
+#block-slideitem .pagination a{
+  display: block;
+  float: left;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 100%;
+  -moz-border-radius:100%;
+  -webkit-border-radius:100%;
+  /*display:block;
+  float:left;
+  width:40px;
+  height:3px;
+  margin-right:1px;
+  background:#fff;
+  /*border-radius: 100%;*/
+}
+#block-slideitem .pagination a:last-child{
+  margin-right: 0;
+}
+#block-slideitem .pagination .selected {
+  background:#765877;
+}
+#block-slideitem .pagination span {
+  display:none;
+}
+/*---section module end---*/

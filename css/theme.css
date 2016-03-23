@@ -95,31 +95,51 @@
   margin: 0;
   padding: 0;
 }
-.block-main-menu li{
+.block-main-menu > li{
   display: block;
   float: left;
   width: 16.6666%;
   text-align: center;
 }
 
-/*login page*/
-.login-adorn{
+/*
+*default footer
+*/
+.footer-menu ul{
+  list-style: none;
+  padding: 5px;
+
+}
+
+
+/*
+*front page
+*/
+
+
+/*
+*login & register page
+*/
+.auth-adorn{
   height: 450px;
   background-image: url(../images/feather-login.jpg);
   background-size: cover;
 }
-.login-form{
+.auth-form{
   height: 450px;
   background-color: #fff;
 }
-.other-login{
-
+.auth-login{
+  padding-top: 10px;
 }
-.other-login ul{
+.auth-login ul{
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.other-login li{
+.auth-login li{
 
+}
+.auth-title {
+  font-size: 1.2em;
 }

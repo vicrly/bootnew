@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="edge">
+  <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/font-awesome/css/font-awesome-4.5.0.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/module.css">
+  <title>星迹旅行</title>
+</head>
+<body>
+<div class="page-wrapper">
+  <header id="header">    
+    <div id="block-home-slide">
+      <div class="view-home-slide">
+        <div class="item">
+          <a href="#" target="_blank">
+            <img src="images/Chrysanthemum.jpg" width="100%" alt="菊花-好大的菊花" typeof="Image" />
+            <div class="slide-txt">鲜艳美丽的花卉</div>
+            <!--<div class="captions"><div>鲜艳美丽的花卉</div><div class="small">1111</div><span class="round-icon">&rArr;</span></div>-->
+          </a>
+        </div>
+        <div class="item">
+          <a href="#" target="_blank">
+            <img src="images/Lighthouse.jpg" width="100%" alt="世界著名灯塔" typeof="Image" />
+            <div class="slide-txt">世界著名灯塔</div>
+          </a>
+        </div>
+      </div>
+      <div class="prev"></div>
+      <div class="next"></div>
+      <div class="pagination"><div class="bullets"></div></div>
+    </div>
+
+    <div class="block-home-moudle debug-bg">2</div>
+  </header>
+  
+  <nav id="nav" class="clearfix">
+    <!--to both-->
+    <div class="container">
+      <ul class="block-main-menu">
+        <li><a href="/">首页</a></li>
+        <li><a href="/">折扣</a></li>
+        <li><a href="/">杂志</a></li>
+        <li><a href="/">活动</a></li>
+        <li><a href="/">目的地</a></li>
+        <li><a href="/">定制</a></li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>    
+    <div class="bottom-shade"></div>
+  </nav>
+  
+  <main id="content">
+    <section class="gray-section clearfix">
+      twill content
+    </section>
+    <section style="height:2000px;">
+      2000px height
+    </section>
+  </main>
+  
+  <footer id="footer">
+    <section class="footer-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-xs-4"></div>
+          <div class="col-sm-2 hidden-xs">123</div>
+          <div class="col-sm-2 col-xs-4">
+            <h5>菜单标题</h5>
+            <ul>
+              <li>子菜单1</li>
+              <li>子菜单2</li>
+              <li>子菜单3</li>
+              <li>子菜单4</li>
+              <li>子菜单5</li>
+            </ul>
+          </div>
+          <div class="col-sm-2 col-xs-4">
+            <h5>菜单标题</h5>
+            <ul>
+              <li>子菜单1</li>
+              <li>子菜单2</li>
+              <li>子菜单3</li>
+              <li>子菜单4</li>
+              <li>子菜单5</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer-bottom">
+      <div class="text-center">
+          <div><img src="images/zanadu-logo-footer.png" alt=""></div>
+          <div>
+            <small>Copyright &copy; 2016 湖南趴淘国际旅行社有限公司</small><br>
+            <a href="http://www.miitbeian.gov.cn" class="white">湘ICP备15020490号</a> <img src="images/logo-szfw.png" height="24" alt=""> <img src="images/logo-norton.gif" height="24" alt="">
+          </div>        
+      </div>
+    </section>
+  </footer>
+</div>
+
+<script src="lib/jquery.min-2.1.4.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="lib/jquery.carouFredSel-6.2.1.js"></script>
+<script>
+jQuery(function(){
+    //var hotelLink = $('#mainSlideshow .slide a:first').attr('href');
+    //$('.bird-link').attr('href',hotelLink);
+    //jQuery('#mainSlideshow .slide a img').attr('width','100%').removeAttr('height')
+
+    jQuery('.view-home-slide').carouFredSel({
+      responsive: true,
+      prev: "#block-home-slide .prev",
+      next: "#block-home-slide .next",
+      items: {
+        visible: 1,
+        height: '45%'
+      },
+      scroll: {
+        fx: 'crossfade',
+        duration: 1500,
+        onBefore:function(data){
+          //var hotelLink = $(data.items.visible[0].innerHTML).attr('href');
+          //$('.bird-link').attr('href',hotelLink);
+        },
+        pauseOnHover:true
+      },
+      pagination  : "#block-home-slide .pagination .bullets"
+    });
+
+    //$('.next,.prev','.carousel-wrapper').on('click',function(){
+    //  $('#mainSlideshow').trigger('configuration',{'auto':false});
+    //});
+
+    // jQuery('.view-slideitem').carouFredSel({
+    //   //width:600,
+    //   responsive: true,
+    //   circular:false,
+    //   infinite: false,
+    //   auto: false,
+    //   prev: '#block-slideitem .prev',
+    //   next: '#block-slideitem .next',
+    //   pagination  : "#block-slideitem .pagination .bullets",
+    //   items: 3,
+    //   scroll: {
+    //     items:3
+    //   },
+    //   swipe: {
+    //     touch: true,
+    //     mouse: false,
+    //     fx:'slide',
+    //     duration:200
+    //   }
+    // });
+
+    /* === CMS - changing translation on hover === */
+    var itemHover = false;
+    jQuery('.column').on({
+      mouseenter: function(){
+        //var link = $('.link',this);
+        if (!itemHover){
+          jQuery("[data-translation]", this).each(function(){
+            itemHover = true;
+            switchTranslation(jQuery(this));
+          });
+        }
+      },
+      mouseleave: function(){
+        //var link = $('.link',this);
+        jQuery('[data-translation]', this).each(function(){
+          switchTranslation(jQuery(this));
+        });
+        itemHover = false;
+      }
+    });
+
+
+    jQuery('.discount-date').each(function(){
+      jQuery(this).html(jQuery(this).data('deadline'));
+    });
+
+    function switchTranslation(el){
+        var temp = el.html();
+        el.html(el.data('translation'));
+        el.data('translation',temp);
+    }
+
+  //jQuery end
+  });
+</script>
+</body>
+</html>
