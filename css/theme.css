@@ -1,6 +1,9 @@
 /*
 *theme
 */
+.page-wrapper{
+  min-width: 320px;
+}
 .twill-background{
   background: url(../images/bg-pattern-diag.png) repeat #262f36;
 }
@@ -110,7 +113,7 @@
   background-color: #fff;
 }
 .other-login{
-  padding-top: 20px;
+
 }
 .other-login ul{
   list-style: none;
