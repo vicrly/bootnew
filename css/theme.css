@@ -25,13 +25,18 @@
 }
 .gray-section{
   background-color: #ececec;
-  padding:60px 0 60px 0;
+  padding:7vmin 0 7vmin 0;
 }
 .footer-menu{
   background-color: #fff;
 }
 .footer-bottom{
-  background-color: #6895b9;
+  background-image: url(../images/bg-image-clouds.jpg);
+  background-size: cover;
+  padding:4vmin 0 3vmin 0;
+}
+.footer-bottom div{
+  margin-bottom: 5px;
 }
 
 .bottom-shade{
@@ -47,30 +52,30 @@
 /********************
 *default header
 */
-#header .background-container{
+.header-background{
   background-image: url(../images/bg-image-clouds-guest.jpg);
   background-size: cover;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
   
 }
-#header .block-site-name{
-  font-size: 1.9em;
-  margin-top: 14px;
+.block-site-name{
+  margin-top: 1.8vw;
+  font-size: 1.8em;
   color: #fff;
 }
-#header .block-topsearch{  
+.block-topsearch{  
   margin-top: 36px;
 }
-#header .block-user-account ul{
+.block-user-account ul{
   color: #fff;
   float: right;
   list-style: none;
 }
-#header .block-user-account ul li{
+.block-user-account ul li{
   float: left;
 }
-#header .block-user-account ul li a{
+.block-user-account ul li a{
   color: #fff;
 }
 
@@ -80,14 +85,14 @@
 #nav{
   position: relative;
 }
-#nav .block-main-menu{
+.block-main-menu{
   list-style: none;
   height: 50px;
   line-height: 50px;
   margin: 0;
   padding: 0;
 }
-#nav .block-main-menu li{
+.block-main-menu li{
   display: block;
   float: left;
   width: 16.6666%;
@@ -107,7 +112,11 @@
 .other-login{
   padding-top: 20px;
 }
-.reglog-weibo, .reglog-wechat{
-  background-color: aqua;
-  border-radius: 25px;
+.other-login ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.other-login li{
+
 }
